@@ -1,0 +1,19 @@
+﻿@model IdentitySample.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<div>
+    <form method="post" asp-action="Register">
+
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+
+        <button type="submit"> Register </button>
+    </form>
+</div>
+
